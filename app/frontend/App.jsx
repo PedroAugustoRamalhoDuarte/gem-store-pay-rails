@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { Checkout } from "./pages/Checkout";
-import { GemDetail } from "./pages/GemDetail.jsx";
-import { GemList } from "./pages/GemList.jsx";
+import { Checkout } from "./pages/Gems/Checkout";
+import { GemDetail } from "./pages/Gems/Show.jsx";
+import { GemList } from "./pages/Gems/Index.jsx";
 
 function App() {
   return (
