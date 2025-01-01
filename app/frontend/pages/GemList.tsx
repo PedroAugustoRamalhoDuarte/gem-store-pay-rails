@@ -1,5 +1,5 @@
 import { useGems } from '../api'
-    import { GemCard } from '../components/GemCard'
+    import { GemCard } from '../components/GemCard.tsx'
     import { Link } from 'react-router-dom'
 
     export const GemList = () => {
