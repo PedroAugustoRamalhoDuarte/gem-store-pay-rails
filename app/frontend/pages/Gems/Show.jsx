@@ -1,15 +1,6 @@
-import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-import { useGem } from "../../api";
-
-export const GemDetail = () => {
-  const { id } = useParams();
-  const { data: gem, isLoading, error } = useGem(id);
-
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error loading gem details</div>;
-
+export const GemDetail = ({ gem }) => {
   return (
     <div className="container mx-auto px-4 py-8">
       <Link
