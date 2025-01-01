@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@inertiajs/react": "^2.0.0",
     "@tanstack/react-query": "^5.62.11",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
@@ -18,12 +19,13 @@
   },
   "devDependencies": {
     "@switchdreams/lint-config": "^0.0.3",
-    "@vitejs/plugin-react": "^4.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.18",
     "eslint": "^9.9.1",
     "globals": "^15.9.0",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
-    "vite": "^5.4.2"
+    "vite": "^5.4.11",
+    "vite-plugin-ruby": "^5.1.0"
   }
 }
