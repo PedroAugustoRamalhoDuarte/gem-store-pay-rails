@@ -1,6 +1,6 @@
 import { GemCard } from "../../components/GemCard.jsx";
 
-export const GemList = ({ gems }) => {
+const GemList = ({ gems }) => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="mb-8 text-3xl font-bold">Our Gems Collection</h1>
@@ -12,3 +12,5 @@ export const GemList = ({ gems }) => {
     </div>
   );
 };
+
+export default GemList;

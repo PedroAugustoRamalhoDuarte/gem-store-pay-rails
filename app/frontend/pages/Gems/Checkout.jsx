@@ -1,7 +1,7 @@
 import { usePage } from '@inertiajs/react'
 import { CheckoutForm } from "../../components/CheckoutForm";
 
-export const Checkout = () => {
+const Checkout = () => {
   const { gem } = usePage().props;
 
   return (
@@ -13,3 +13,5 @@ export const Checkout = () => {
     </div>
   );
 };
+
+export default Checkout;

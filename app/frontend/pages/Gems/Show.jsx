@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const GemDetail = ({ gem }) => {
+const GemDetail = ({ gem }) => {
   return (
     <div className="container mx-auto px-4 py-8">
       <Link
@@ -32,3 +32,5 @@ export const GemDetail = ({ gem }) => {
     </div>
   );
 };
+
+export default GemDetail;
