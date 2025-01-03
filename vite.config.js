@@ -1,9 +1,9 @@
 import react from "@vitejs/plugin-react";
-import {defineConfig} from "vite";
+import { defineConfig } from "vite";
 import ViteRuby from "vite-plugin-ruby";
 
 export default defineConfig({
-  build: {sourcemap: false},
+  build: { sourcemap: false },
   plugins: [ViteRuby(), react()],
   test: {
     environment: "jsdom",
