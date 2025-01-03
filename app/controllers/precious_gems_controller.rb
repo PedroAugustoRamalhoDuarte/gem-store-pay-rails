@@ -12,4 +12,11 @@ class PreciousGemsController < ApplicationController
       gem: gem.as_json(methods: [:price], include: :photo)
     }
   end
+
+  def checkout
+    gem = PreciousGem.find(params[:id])
+    render inertia: 'Gems/Checkout', props: {
+      gem: gem.as_json(methods: [:price], include: :photo)
+    }
+  end
 end

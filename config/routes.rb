@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :precious_gems, only: [:index, :show]
+  resources :precious_gems, only: [:index, :show] do
+    member do
+      get 'checkout'
+    end
+  end
   get 'inertia-example', to: 'inertia_example#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
