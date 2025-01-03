@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "@inertiajs/react";
 export const GemCard = ({ gem }) => {
   return (
     <Link
