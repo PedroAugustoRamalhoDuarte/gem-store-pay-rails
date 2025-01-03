@@ -39,7 +39,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_01_173153) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "gems", force: :cascade do |t|
+  create_table "precious_gems", force: :cascade do |t|
     t.string "name", null: false
     t.integer "quantity", default: 0, null: false
     t.integer "price_cents", null: false
