@@ -32,6 +32,6 @@ class PreciousGemsController < ApplicationController
   private
 
   def user_params
-    params.expect(user: [:name, :email, :document])
+    params.expect(user: [ :name, :email, :document ])
   end
 end

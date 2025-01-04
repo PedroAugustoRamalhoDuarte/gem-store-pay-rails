@@ -1,4 +1,5 @@
-import { usePage } from '@inertiajs/react'
+import { usePage } from "@inertiajs/react";
+
 import { CheckoutForm } from "../../components/CheckoutForm";
 
 const Checkout = () => {

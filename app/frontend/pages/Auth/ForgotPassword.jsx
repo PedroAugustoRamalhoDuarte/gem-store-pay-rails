@@ -13,8 +13,8 @@ export default function ForgotPassword() {
   return (
     <>
       <Head title="Forgot Password" />
-      <div className="max-w-md mx-auto mt-10">
-        <h1 className="text-2xl font-bold mb-6">Forgot Password</h1>
+      <div className="mx-auto mt-10 max-w-md">
+        <h1 className="mb-6 text-2xl font-bold">Forgot Password</h1>
 
         <form onSubmit={submit} className="space-y-6">
           <div>
@@ -39,7 +39,7 @@ export default function ForgotPassword() {
             <button
               type="submit"
               disabled={processing}
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
               {processing ? "Sending..." : "Send Reset Instructions"}
             </button>
