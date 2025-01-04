@@ -2,7 +2,7 @@ import { Link } from "@inertiajs/react";
 export const GemCard = ({ gem }) => {
   return (
     <Link
-      to={`/gems/${gem.id}`}
+      href={`/precious_gems/${gem.id}`}
       className="block rounded-lg bg-white shadow-md transition-shadow hover:shadow-lg"
     >
       <img

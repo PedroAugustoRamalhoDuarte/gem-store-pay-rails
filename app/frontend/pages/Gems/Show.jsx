@@ -4,7 +4,7 @@ const GemDetail = ({ gem }) => {
   return (
     <div className="container mx-auto px-4 py-8">
       <Link
-        to="/"
+        href="/precious_gems"
         className="mb-4 inline-block text-blue-600 hover:text-blue-800"
       >
         &larr; Back to Collection
@@ -22,7 +22,7 @@ const GemDetail = ({ gem }) => {
             ${gem?.price.toLocaleString()}
           </p>
           <Link
-            to={`/checkout/${gem?.id}`}
+            href={`/precious_gems/${gem?.id}/checkout/`}
             className="rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700"
           >
             Buy Now with PIX
