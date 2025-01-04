@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resource :session
-  resources :passwords, param: :token
+  resource :session, only: [:new, :create, :destroy]
+  resources :passwords, param: :token, only: [:new, :create, :edit, :update]
   resources :precious_gems, only: [ :index, :show ] do
     member do
       get "checkout"

@@ -3,6 +3,7 @@ class PasswordsController < ApplicationController
   before_action :set_user_by_token, only: %i[ edit update ]
 
   def new
+    render inertia: 'Auth/ForgotPassword'
   end
 
   def create
@@ -10,10 +11,11 @@ class PasswordsController < ApplicationController
       PasswordsMailer.reset(user).deliver_later
     end
 
-    redirect_to new_session_path, notice: "Password reset instructions sent (if user with that email address exists)."
+    redirect_to new_session_path, notice: "If an account exists with that email, we've sent password reset instructions."
   end
 
   def edit
+    render inertia: 'Auth/ResetPassword', props: { token: params[:token] }
   end
 
   def update
