@@ -19,4 +19,15 @@ class SessionsController < ApplicationController
     terminate_session
     redirect_to new_session_path
   end
+  private
+
+  def share_authentication_status
+    inertia_share auth: {
+      user: authenticated? ? {
+        id: Current.user.id,
+        name: Current.user.name,
+        email: Current.user.email
+      } : nil
+    }
+  end
 end

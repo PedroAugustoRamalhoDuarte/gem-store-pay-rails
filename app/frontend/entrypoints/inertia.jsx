@@ -2,6 +2,8 @@ import { createInertiaApp } from "@inertiajs/react";
 import { createElement } from "react";
 import { createRoot } from "react-dom/client";
 
+import DefaultLayout from "@/components/Layout";
+
 createInertiaApp({
   // Set default page title
   // see https://inertia-rails.netlify.app/guide/title-and-meta
@@ -20,6 +22,8 @@ createInertiaApp({
     const page = pages[`../pages/${name}.jsx`];
     if (!page) {
       console.error(`Missing Inertia page component: '${name}.jsx'`);
+    } else {
+      page.default.layout = (page) => <DefaultLayout>{page}</DefaultLayout>;
     }
 
     // To use a default layout, import the Layout component
