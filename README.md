@@ -1,24 +1,15 @@
-# README
+# Gem Store
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This ia demo application to test Pay gem integration with ASAAS using pay-asaas gem;
 
-Things you may want to cover:
+## Configuration
 
-* Ruby version
+### Environment Variables
 
-* System dependencies
+- In you config/application.yml file, add the following environment variables:
 
-* Configuration
+```
+ASAAS_API_KEY: 'your_asaas_api_key'
+```
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
