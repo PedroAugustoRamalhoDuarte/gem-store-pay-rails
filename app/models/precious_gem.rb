@@ -11,7 +11,7 @@ class PreciousGem < ApplicationRecord
 
   def photo_url
     return unless photo.attached?
-    
+
     Rails.application.routes.url_helpers.rails_blob_url(photo, only_path: true)
   end
 end
