@@ -61,3 +61,9 @@ gem "inertia_rails", "~> 3.6"
 gem "vite_rails", "~> 3.0"
 
 gem "panko_serializer"
+
+gem "pay", "~> 8.0"
+
+gem "pay-asaas"
+
+gem "figaro"
