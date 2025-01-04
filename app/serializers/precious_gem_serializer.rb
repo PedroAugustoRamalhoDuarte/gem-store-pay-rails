@@ -1,4 +1,4 @@
-class PreciousGemSerializer < Panko::Serializer
+class PreciousGemSerializer < ApplicationSerializer
   attributes :id, :name, :quantity, :price_cents, :price, :photo_url
 
   def photo_url

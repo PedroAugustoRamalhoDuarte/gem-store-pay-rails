@@ -9,7 +9,10 @@ export default function Navbar() {
         <div className="flex h-16 justify-between">
           <div className="flex">
             <div className="flex shrink-0 items-center">
-              <Link href="/" className="text-xl font-bold text-gray-800">
+              <Link
+                href="/precious_gems"
+                className="text-xl font-bold text-gray-800"
+              >
                 Gem Store
               </Link>
             </div>

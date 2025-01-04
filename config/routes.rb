@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   resources :passwords, param: :token, only: [ :new, :create, :edit, :update ]
   resources :precious_gems, only: [ :index, :show ] do
     member do
-      get "checkout"
+      post "checkout"
     end
   end
+  resources :charges, only: [ :index ]
 end

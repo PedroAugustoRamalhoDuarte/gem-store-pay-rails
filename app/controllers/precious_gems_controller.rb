@@ -15,18 +15,7 @@ class PreciousGemsController < ApplicationController
 
   def checkout
     gem = PreciousGem.find(params[:id])
-    render inertia: "Gems/Checkout", props: {
-      gem: serialize(gem)
-    }
-  end
-
-  def buy
-    gem = PreciousGem.find(params[:id])
-
-    # TODO: Create a user after that
     User.first.payment_processor.charge(gem.price_cents)
-
-    redirect_to root_path
   end
 
   private
