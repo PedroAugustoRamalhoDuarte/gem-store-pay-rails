@@ -67,3 +67,5 @@ gem "pay", "~> 8.0"
 gem "pay-asaas"
 
 gem "figaro"
+
+gem "stripe", "~> 13.0"

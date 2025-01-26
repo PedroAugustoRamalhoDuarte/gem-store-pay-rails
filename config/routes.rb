@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   resources :precious_gems, only: [ :index, :show ] do
     member do
       post "checkout"
+      post "stripe_checkout"
     end
   end
   resources :charges, only: [ :index ]
+
+  root to: "precious_gems#index"
 end

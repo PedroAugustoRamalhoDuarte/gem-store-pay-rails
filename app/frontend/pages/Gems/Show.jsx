@@ -23,9 +23,17 @@ const GemDetail = ({ gem }) => {
           </p>
           <Link
             href={`/precious_gems/${gem?.id}/checkout/`}
+            method="post"
             className="rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700"
           >
             Buy Now with PIX
+          </Link>
+          <Link
+            href={`/precious_gems/${gem?.id}/stripe_checkout/`}
+            method="post"
+            className="rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700"
+          >
+            Stripe Checkout
           </Link>
         </div>
       </div>

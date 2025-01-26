@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  pay_customer default_payment_processor: :asaas
+  pay_customer default_payment_processor: :stripe
 
   has_secure_password
 
